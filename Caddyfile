@@ -1,0 +1,15 @@
+{
+  email you@example.com
+}
+
+{$UI_HOST} {
+  reverse_proxy mm-ui:80
+}
+
+{$API_HOST} {
+  reverse_proxy mm-api:8088
+}
+
+{$AUTH_HOST} {
+  reverse_proxy keycloak:8080
+}
